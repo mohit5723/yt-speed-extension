@@ -31,6 +31,12 @@
         },
         "description": "Change YouTube playback speed to 2x"
       }
-    }
+    },
+    "content_scripts": [
+      {
+        "matches": ["*://*.youtube.com/*"],
+        "js": ["content.js"]
+      }
+    ]
   }
   
